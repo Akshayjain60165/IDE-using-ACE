@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDE</title>
+
+    <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+
+    <div class="header"> Endurostat Code Editor</div>
+    <div class="control-panel">
+        Select Language:
+        &nbsp; &nbsp;
+        <select id="languages" class="languages" onchange="changeLanguage()">
+            <option value="c"> C </option>
+            <option value="cpp"> C++ </option>
+            <option value="php"> PHP </option>
+           <option value="python"> Python </option>
+            <option value="node"> Node JS </option>
+        </select>
+    </div>
+    <div class="editor" id="editor"></div>
+
+    <div class="button-container">
+        <button class="btn" onclick="executeCode()"> Run </button>
+    </div>
+  <div class="output"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/ace/ace.js"></script>
+    <script src="static/js/ace/theme-monokai.js"></script>
+    <script src="static/js/ide.js"></script>
+
+</body>
+</html>
